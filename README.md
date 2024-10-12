@@ -35,7 +35,7 @@ Whether you're a student, a job seeker, or someone who wants to organize their c
 
 ## Getting Started
 ### See Project View and Generate Resume
-- [Live Preview](https://www.mongodb.com/)
+- [Live Preview](https://nothpy.github.io/Resume-Generator-Website/)
 
 ### Installation
 
