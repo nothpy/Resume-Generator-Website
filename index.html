@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nothpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="generaterTemp" class="dis-row">
+        <section class="form-section">
+            <h2>Profile Information</h2>
+            <form id="profile-form">
+                <label for="nameInput">Name:</label>
+                <input type="text" id="nameInput" placeholder="Enter your name"><br>
+
+                <label for="phoneInput">Phone:</label>
+                <input type="text" id="phoneInput" placeholder="Enter your phone number"><br>
+
+                <label for="emailInput">Email:</label>
+                <input type="email" id="emailInput" placeholder="Enter your email"><br>
+
+                <label for="githubInput">GitHub:</label>
+                <input type="text" id="githubInput" placeholder="Enter GitHub URL"><br>
+
+                <label for="linkedinInput">LinkedIn:</label>
+                <input type="text" id="linkedinInput" placeholder="Enter LinkedIn URL"><br>
+
+                <label for="imageInput">Profile Image:</label>
+                <input type="file" id="imageInput" accept="image/*"><br>
+                <img id="imagePreview" src="#" alt="Image Preview" style="display: none; max-width: 150px;"><br>
+
+                <button type="button" onclick="updateHeader()">Update Profile</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Technical skills </h2>
+            <form id="profile-form">
+                <label for="languages">Programming languages : </label>
+                <input type="text" id="LInput" placeholder="C++, Python, Java...."><br>
+
+                <label for="Web-technologies">Web-technologies : </label>
+                <input type="text" id="WtInput" placeholder="HTML, CSS..."><br>
+
+                <label for="Database-management">Database management : </label>
+                <input type="text" id="DbInput" placeholder="MongoDb, SQL...."><br>
+
+                <label for="Version-control">Version control : </label>
+                <input type="text" id="VcInput" placeholder="Git, Github...."><br>
+
+                <label for="Frameworks-Libraries">Frameworks and Libraries : </label>
+                <input type="text" id="FLInput" placeholder="Node.js, NPM, mongoose...."><br>
+
+                <label for="Operating-System">Operating System: </label>
+                <input type="text" id="OSInput" placeholder="Windows, Linux, macOs...."><br>
+
+                <label for="Miscellaneous">Miscellaneous : </label>
+                <input type="text" id="MissInput" placeholder="Socket.io, powerBi...."><br>
+
+                <button type="button" onclick="addTechnicalSkills()">Add Skills</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h3>Add New Experience</h3>
+            <form id="experience-form">
+                <label for="job-role">Job Role :</label>
+                <input type="text" id="jobRoleInput" required><br>
+
+                <label for="job-title">Job Title at Company :</label>
+                <input type="text" id="job-title-at-company-input" required><br>
+
+                <label for="job-duration">Job Duration :</label>
+                <input type="text" id="job-duration-input" required><br>
+
+                <label for="job-locaction">Job Location :</label>
+                <input type="text" id="jobLocationInput" required><br>
+
+
+                <label for="job-description">Job Description :</label>
+                <textarea id="jobDescription-input" rows="4" required></textarea><br>
+
+                <button type="button" onclick="addExperience()">Add Experience</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Projects</h2>
+            <form id="Project-form">
+                <label for="projectNameInput">Project Name:</label>
+                <input type="text" id="projectNameInput" placeholder="Enter project name"><br>
+
+                <label for="projectLinkInput">Project Link</label>
+                <input type="text" id="projectLinkInput" placeholder="Enter project link"><br>
+
+                <label for="projectDescriptionInput">Job Description :</label>
+                <textarea id="projectDescriptionInput" rows="4" required></textarea><br>
+
+                <button type="button" onclick="addProject()">Add Project</button>
+            </form>
+        </section>
+
+       
+
+        <section class="form-section">
+            <h3>Enter Education Details</h3>
+            <form id="education-form">
+                <label for="degreeInput">Degree Name:</label>
+                <input type="text" id="degreeInput" placeholder="Enter your degree name" required>
+
+                <label for="institutionInput">Institution/Board:</label>
+                <input type="text" id="institutionInput" placeholder="Enter institution/board" required>
+
+                <label for="yearInput">Year Duration:</label>
+                <input type="text" id="yearInput" placeholder="Enter graduation year (May-2021 to Apr-2025)" required>
+
+                <label for="scoreInput">CGPA/Percentage:</label>
+                <input type="text" id="scoreInput" placeholder="Enter CGPA or percentage" required>
+
+                <button type="button" onclick="addEducation()">Add Education</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Achievement</h2>
+            <form id="Achievement-form">
+                <label for="achievementNameInput">Achievement Name:</label>
+                <input type="text" id="achievementNameInput" placeholder="Enter achievement name"><br>
+
+                <label for="achievementDescriptionInput">Achievement Description :</label>
+                <textarea id="achievementDescriptionInput" rows="4" required></textarea><br>
+
+                <button type="button" onclick="addAchievement()">Add </button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h2>Add Extracurriculars</h2>
+            <form id="Extracurriculars-form">
+                <label for="ExtracurricularsNameInput">Extracurricular Name:</label>
+                <input type="text" id="ExtracurricularsNameInput" placeholder="Enter name" required><br>
+
+                <label for="ExtracurricularsDescriptionInput">Description:</label>
+                <textarea id="ExtracurricularsDescriptionInput" rows="4" required></textarea><br>
+
+                <button type="button" onclick="addExtracurriculars()">Add</button>
+            </form>
+        </section>
+
+        <section class="form-section">
+            <h3>Write Summary</h3>
+            <form id="summary-form">
+                <textarea id="summaryInput" rows="4" required></textarea><br>
+                <button type="button" onclick="updateSummary()">Add Summary</button>
+            </form>
+        </section>
+
+
+
+        <section class="form-section">
+            <h2>Add Key Course</h2>
+            <form id="keyCourse-form">
+                <label for="keyCourseNameInput">Course or Subject Name:</label>
+                <input type="text" id="keyCourseNameInput" placeholder="AI, OS, COA, TOC..." required>
+                <button type="button" onclick="addKeyCourse()">Add</button>
+            </form>
+        </section>
+
+    </div>
+
+
+    <div class="resume-container" id="cv-template">
+        <header class="profile-header">
+            <div class="image-container">
+                <img id="profileImage" src="" alt="Your Photo">
+            </div>
+            <div class="info-container">
+                <h1 id="name"></h1>
+                <p id="social-links">
+                    <a id="phone" target="_blank"></a>
+                    <a id="email" href="#" target="_blank"></a>
+                    <a id="github" href="#" target="_blank"></a>
+                    <a id="linkedin" href="#" target="_blank"></a>
+                </p>
+            </div>
+        </header>
+
+        <!-- summary section  -->
+        <section id="summary">
+            <h1>Summary</h1>
+            <h3 id="sum-text">Passionate professional with X years of experience in [field]...</h3>
+        </section>
+
+        </section>
+
+        <!-- Education Table Section -->
+        <section class="education">
+            <h1 class="text-left">Education</h1>
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="text-left" scope="col">Degree Name</th>
+                        <th class="text-left" scope="col">Institution/Board</th>
+                        <th class="text-left" scope="col">Year</th>
+                        <th class="text-left" scope="col">CGPA/Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="education-table-body">
+                    <!-- Dynamically added education rows will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="experience">
+            <h1>Experience</h1>
+            <!-- Dynamically added experiences will appear here -->
+        </section>
+
+
+        <section id="projects">
+            <h1>Your Projects</h1>
+            <!-- Dynamically added project items will appear here -->
+        </section>
+
+        <section id="skills">
+            <h1>Technical skills</h1>
+            <ul>
+                <li>
+                    <p><b><span class="fs-13">Programming languages : </span></b><span id="programmingLanguage"
+                            class="fs-12"></span></p>
+                </li>
+                <li>
+                    <p><b><span class="fs-13">Web-technologies : </span></b><span id="Web-technology"
+                            class="fs-12"></span></p>
+                </li>
+                <li>
+                    <p><b><span class="fs-13">Database management : </span></b><span id="Database-management"
+                            class="fs-12"></span></p>
+                </li>
+                <li>
+                    <p><b><span class="fs-13">Version control : </span></b><span id="version-control"
+                            class="fs-12"></span></p>
+                </li>
+                <li>
+                    <p><b><span class="fs-13">Frameworks and Libraries : </span></b><span id="frameworks"
+                            class="fs-12"></span></p>
+                </li>
+                <li>
+                    <p><b><span class="fs-13">Operating System: </span></b><span id="operatingSystem"
+                            class="fs-12"></span></p>
+                </li>
+                <li id="other">
+                    <p><b><span class="fs-13">Miscellaneous : </span></b><span id="Miscellaneous" class="fs-12"></span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="achievements">
+            <h1>Achievements</h1>
+            <div id="achievementList">
+                <!-- Dynamically added achievements will appear here -->
+            </div>
+        </section>
+
+        <section id="keycourse">
+            <h1>Key Courses Taken</h1>
+            <ul class="keyCourse" id="keyCourseList">
+            </ul>
+        </section>
+
+        <section id="achievements">
+            <h1>Extracurriculars</h1>
+            <div id="ExtracurricularsList">
+                <!-- Dynamically added Extracurriculars will appear here -->
+            </div>
+        </section>
+
+        <div>
+            <button type="button" onclick="downloadCv()" id="print-btn">Download CV</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

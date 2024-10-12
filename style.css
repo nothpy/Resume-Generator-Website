@@ -1,0 +1,303 @@
+body {
+    font-size: 10px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.fs-5{
+    font-size: 5px;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+
+.dis-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ccc;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image-container img {
+    border-radius: 5%;
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.info-container {
+    flex: 3;
+    text-align: right;
+}
+
+#name {
+    font-size: 24px;
+    margin-right: 10px;
+
+}
+#social-links{
+    display: flex;
+    flex-direction: column;
+}
+#social-links a {
+    color: #0073b1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+#social-links a:hover {
+    text-decoration: underline;
+}
+
+#course-info {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.resume-container {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0073b1;
+}
+
+h2 {
+    /* border-bottom: 2px solid #0073b1; */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.experience-item,
+.education-item,
+.project-item {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+h2, h3 {
+    color: #333;
+}
+
+.form-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 10px;
+    /* height: 400px; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #0073b1;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005580;
+}
+
+#imagePreview {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: none; /* Hide by default, will show on file input change */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"] {
+        font-size: 13px;
+    }
+}
+
+.keyCourse{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.keyCourse li{
+    padding: 2px;
+    border: 2px solid rgb(235, 222, 222);
+    margin: 4px;
+    font-size: 13px;
+    list-style: none;
+}
+
+
+/***************start**********************Education section style**********start************************/
+
+/* Container class: Adds responsive padding to the sides of the container */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Margin Utility Class: Adds vertical margin (3rem) to both top and bottom */
+  .my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+  
+  /* Text Alignment: Centers the text horizontally */
+  .text-center {
+    text-align: center !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  
+  /* Margin Utility Class: Adds bottom margin (1.5rem) */
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Basic Table Styling */
+  .table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+  }
+  
+  /* Adds background shading on alternate rows */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Adds hover effect to the rows */
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  
+  /* Adds borders around the table and between cells */
+  .table-bordered {
+    border: 1px solid #dee2e6;
+  }
+  
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6;
+  }
+  
+  /* Dark Background for Table Header */
+  .table-dark {
+    color: black;
+    background-color: #fffdfd;
+    border: 1px solid black;
+  }
+  
+  /* Thead styling for dark header */
+  .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+  }
+  
