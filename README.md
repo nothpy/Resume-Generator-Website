@@ -1,6 +1,6 @@
 # Resume-Generator-Website
 
-![Resume Generator](path-to-your-image.png)
+![Resume Generator](https://github.com/nothpy/Resume-Generator-Website/blob/main/previewImage/2.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
