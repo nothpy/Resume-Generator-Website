@@ -1,5 +1,5 @@
 # Resume-Generator-Website
-
+![Resume Generator](https://github.com/nothpy/Resume-Generator-Website/blob/main/previewImage/1.png)
 ![Resume Generator](https://github.com/nothpy/Resume-Generator-Website/blob/main/previewImage/2.png)
 
 ## Table of Contents
